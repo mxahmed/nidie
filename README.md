@@ -8,7 +8,7 @@ The choice to use FastAPI to build this was out of mere convince of taking advan
 The code has the following basic layout:
 - `api` module, this contains our api implementation.
   - `api/__init__.py` contains the FastAPI app instance and it's config.
-  - `api/model.py` contains our Pydantic data model `NationalID` responsible of validating and extracting the needed information.
+  - `api/model.py` contains our Pydantic data model `NIDRequest` and `NIDResponse` responsible of validating and extracting the needed information and describing the scheme of the API response.
   - `api/utils.py` contains simple utility functions and mapping constants.
   - `api/endpoints` contains our single endpoint implementation and router declaration.
 
